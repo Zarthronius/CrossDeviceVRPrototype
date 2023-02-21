@@ -40,6 +40,7 @@ namespace Ubiq.Samples
 
         private void RoomClient_OnJoinRejected(Rejection rejection)
         {
+            Debug.Log(lastRequestedJoincode);
             if (rejection.joincode != lastRequestedJoincode)
             {
                 return;
@@ -53,6 +54,7 @@ namespace Ubiq.Samples
         public void Join()
         {
             lastRequestedJoincode = joincodeText.text.ToLowerInvariant();
+            //Debug.Log(lastRequestedJoincode);
             mainMenu.roomClient.Join(joincode:lastRequestedJoincode);
         }
     }
