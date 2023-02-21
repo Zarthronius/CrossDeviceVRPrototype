@@ -2451,7 +2451,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940542368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e71858e6a92fcc448a8ddd3f9d5f3d6f, type: 3}
   m_Name: 
@@ -5029,7 +5029,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005958799}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a43f37dede1ac74c8f3431e9f649cc7, type: 3}
   m_Name: 
@@ -5043,13 +5043,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005958799}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c6b1b8d164b89c44bc262fd7f6b76c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   socialMenu: {fileID: 1353471137}
-  indicatorTemplate: {fileID: 0}
+  indicatorTemplate: {fileID: 2958351199309153149, guid: 881ec7297142bb644bc5a1d0e1873c0c, type: 3}
 --- !u!1 &2024530117
 GameObject:
   m_ObjectHideFlags: 0
