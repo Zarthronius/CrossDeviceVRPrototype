@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ubiq.Messaging;
@@ -41,11 +41,11 @@ public class MyNetworkedObjectButtonTest : MonoBehaviour
         {
             //messageToggleStatus = toggleBoolStatus
             messageToggleStatus = true
-        });*/
+        });
         Message m = new Message()
         {
             messageToggleStatus = toggleStatus
         };
         networkContextSquare.SendJson(m);
     }
-}
+}*/
