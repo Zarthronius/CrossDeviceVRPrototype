@@ -15,22 +15,25 @@ public class NetworkRenderToggle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Get render component
         r = GetComponent<Renderer>();
+        //Register object
         context = NetworkScene.Register(this);
-        //NetworkId networkIdSquare = new NetworkId(1001); //
-        //context = new NetworkContext(); //
     }
 
+    //flag
     bool lastRendered;
-    
+
     // Update is called once per frame
     void Update()
     {
+        // if flag isn't new status
         if (lastRendered != r.enabled)
         {
+            //update flag
             lastRendered = r.enabled;
-            Debug.Log(lastRendered);
 
+            //send message of new status
             context.SendJson(new Message()
             {
                 isRendered = lastRendered
@@ -58,8 +61,12 @@ public class NetworkRenderToggle : MonoBehaviour
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
     {
+        // parse message
         var m = message.FromJson<Message>();
+        
+        //renderer status changed to message value
         r.enabled = m.isRendered;
+        //bool flag changed to render status
         lastRendered = r.enabled;
         Debug.Log(r.enabled);
     }
