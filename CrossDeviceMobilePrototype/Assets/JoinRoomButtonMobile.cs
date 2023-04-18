@@ -54,8 +54,8 @@ namespace Ubiq.Samples
         public void Join()
         {
             Debug.Log("Join");
-            mainMenu.roomClient.Join(joincode:"pwm"); //
-            
+            //mainMenu.roomClient.Join(joincode:"pwm"); //
+            mainMenu.roomClient.Join(joincode:"k3g");
             
             //lastRequestedJoincode = joincodeText.text.ToLowerInvariant();
             //mainMenu.roomClient.Join(joincode:lastRequestedJoincode);
