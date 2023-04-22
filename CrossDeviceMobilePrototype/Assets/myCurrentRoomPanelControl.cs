@@ -5,7 +5,7 @@ using System.IO;
 using Ubiq.Rooms;
 using UnityEngine;
 using UnityEngine.UI;
-using Ubiq.Rooms;
+//using Ubiq.Rooms;
 
 namespace Ubiq.Samples
 {
@@ -23,6 +23,6 @@ namespace Ubiq.Samples
         public void Bind(/*SocialMenu mainMenu*/)
         {
             Joincode.text = mainMenu.roomClient.Room.JoinCode.ToUpperInvariant();
-        }
+        } 
     }
 }

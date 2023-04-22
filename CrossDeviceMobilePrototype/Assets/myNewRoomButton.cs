@@ -17,11 +17,12 @@ namespace Ubiq.Samples
         public bool publish;
         //public string joinCode;
 		
-		public Text Joincode;
+		//public Text Joincode;
 
         // Expected to be called by a UI element
         public async void NewRoom()
         {
+			//nameText.text = "testRoom";
             await createRoom();
             //joinCode = mainMenu.roomClient.Room.JoinCode;
             //Debug.Log("Shouldn't be first");
@@ -37,11 +38,7 @@ namespace Ubiq.Samples
                     name: nameText.text,
                     publish: publish);
             });
-            //while (mainMenu.roomClient.Room.JoinCode == null)
-            //{
-            //    Debug.Log("here");
-           // }
-            Debug.Log(mainMenu.roomClient.Room.JoinCode);
+            //Debug.Log(mainMenu.roomClient.Room.JoinCode);
             //Debug.Log("should be first");
         }
     }
