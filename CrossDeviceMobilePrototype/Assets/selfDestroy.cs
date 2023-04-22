@@ -7,12 +7,8 @@ public class selfDestroy : MonoBehaviour
     //specify lifetime for object
 
     // Start is called before the first frame update
-    //private int time;
     void Start()
     {
-        //Destroy(gameObject, time);
-        
-        
     }
 
     // Update is called once per frame
