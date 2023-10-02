@@ -1,5 +1,5 @@
 # CrossDeviceVRPrototype
-KV6003BNN01 Individual Computing Project
+Undergraduate Dissertation (Individual Computing Project) 
 
 -----------------
 REFERENCES FOR PHOTOS IN PROTOTYPE:
